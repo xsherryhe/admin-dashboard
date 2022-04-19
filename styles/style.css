@@ -1,0 +1,17 @@
+body {
+  display: grid;
+  grid-template: "sidebar main-header" 1fr 
+                 "sidebar main" 4fr / 1fr 4fr;
+}
+
+#sidebar {
+  grid-area: sidebar;
+}
+
+#main-header {
+  grid-area: main-header;
+}
+
+main {
+  grid-area: main;
+}
