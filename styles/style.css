@@ -1,17 +1,123 @@
+:root {
+  --main-background-color: rgb(240, 231, 231);
+  --primary-color: rgb(208, 32, 32);
+  --off-white-color: rgb(255, 255, 252);
+  font-size: calc(8px + 0.4vh + 0.4vw);
+}
+
 body {
+  background: var(--main-background-color);
   display: grid;
-  grid-template: "sidebar main-header" 1fr 
-                 "sidebar main" 4fr / 1fr 4fr;
+  grid: "sidebar main-header" 1fr 
+        "sidebar main" 4fr / 1fr 4fr;
 }
 
 #sidebar {
+  background-color: var(--primary-color);
+  color: var(--off-white-color);
   grid-area: sidebar;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: start;
+  padding: 0 2rem;
+}
+
+#sidebar a {
+  color: var(--off-white-color);
+}
+
+.menu-start {
+  margin-top: 1rem;
 }
 
 #main-header {
+  background-color: var(--off-white-color);
   grid-area: main-header;
+  display: grid;
+}
+
+#topbar, #opener {
+  margin: 1rem;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+#search-bar {
+  background-color: var(--main-background-color);
+}
+
+#topbar > h3 {
+  margin: 0;
+}
+
+#opener {
+  display: grid;
+}
+
+#opener h1, #opener h5 {
+  margin: 0;
+}
+
+#opener button {
+  margin: 0.5rem;
+  background-color: var(--primary-color);
+  color: var(--off-white-color);
 }
 
 main {
   grid-area: main;
+  display: grid;
+  gap: 1rem;
+  grid: "projects announcements" 1fr
+        "projects trending" 1fr / 3fr 1fr;
+  margin: 1rem;
 }
+
+#projects, #announcements, #trending {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+#projects {
+  grid-area: projects;
+}
+
+#project-preview, #announcement-preview, #trending-preview {
+  display: grid;
+  grid-auto-rows: minmax(min-content, 1fr);
+}
+
+#announcement-preview, #trending-preview {
+  background-color: var(--off-white-color);
+  padding: 1rem;
+}
+
+#project-preview {
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+
+article {
+  background-color: var(--off-white-color);
+}
+
+#announcements {
+  grid-area: announcements;
+}
+
+#trending {
+  grid-area: trending;
+}
+
+#trending-preview {
+  grid-template-columns: auto auto;
+}
+
+#trending img {
+  grid-row-end: span 2;
+}
+
+#trending p {
+  margin: 0;
+}
+
