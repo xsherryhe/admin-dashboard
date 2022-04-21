@@ -1,15 +1,29 @@
+@font-face {
+  font-family: primary-font;
+  src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf) format("truetype-variations");
+  font-weight: 1 999;
+}
+
 :root {
-  --main-background-color: rgb(240, 231, 231);
-  --primary-color: rgb(208, 32, 32);
-  --off-white-color: rgb(255, 255, 252);
-  font-size: calc(8px + 0.4vh + 0.4vw);
+  --main-background-color: #f0e7e7;
+  --primary-color: #b91c1c;
+  --off-white-color: #fffffc;
+  --page-fonts: primary-font, sans-serif;
+  font-size: calc(5px + 0.4vh + 0.4vw);
 }
 
 body {
   background: var(--main-background-color);
+  min-height: 100vh;
   display: grid;
   grid: "sidebar main-header" 1fr 
         "sidebar main" 4fr / 1fr 4fr;
+  font-family: var(--page-fonts);
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 550;
 }
 
 #sidebar {
@@ -94,7 +108,7 @@ main {
 
 #project-preview {
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
 
 article {
