@@ -5,3 +5,15 @@ The project primarily demonstrates various CSS tools and skills, including CSS G
 This project is currently in progress.
 
 Image credits:
+
+1. Material Design Icons: https://materialdesignicons.com/
+  a. yin-yang
+  b. home-account
+  c. smart-card
+  d. message-settings
+  e. history
+  f. calendar-check
+  g. account-multiple
+  h. cog
+  i. cloud-question
+  j. lock
