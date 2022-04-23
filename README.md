@@ -17,3 +17,8 @@ Image credits:
   h. cog
   i. cloud-question
   j. lock
+  h. magnify
+  i. bell-outline
+
+2. Aqualast: https://pixabay.com/users/aqualast-18069379/
+https://pixabay.com/vectors/fish-koi-fins-scales-aquatic-5522139/

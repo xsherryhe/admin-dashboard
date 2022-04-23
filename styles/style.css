@@ -9,6 +9,7 @@
   --primary-color: #b91c1c;
   --off-white-color: #fffffc;
   --page-fonts: primary-font, sans-serif;
+  --section-shadow: 0 0.2rem 0.4rem #c5c5c5;
   font-size: calc(5px + 0.4vh + 0.4vw);
 }
 
@@ -16,14 +17,14 @@ body {
   background: var(--main-background-color);
   min-height: 100vh;
   display: grid;
-  grid: "sidebar main-header" 1fr 
-        "sidebar main" 4fr / 1fr 4fr;
+  grid: "sidebar main-header" max-content
+        "sidebar main" 1fr / 1fr 4fr;
   font-family: var(--page-fonts);
 }
 
 h1 {
   font-size: 1.8rem;
-  font-weight: 550;
+  font-weight: 600;
   margin: 0;
 }
 
@@ -49,9 +50,6 @@ h1 {
 #sidebar img {
   justify-self: center;
   width: 1.4rem;
-}
-
-#sidebar img:hover {
   cursor: pointer;
 }
 
@@ -78,34 +76,74 @@ h1 {
   background-color: var(--off-white-color);
   grid-area: main-header;
   display: grid;
+  padding: 1rem 4rem 0 2rem;
+  box-shadow: var(--section-shadow);
 }
 
 #topbar, #opener {
-  margin: 1rem;
   display: grid;
+  grid: max-content / max-content auto;
   grid-auto-flow: column;
+  grid-auto-columns: max-content;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+#topbar {
+  margin-bottom: 2rem;
+}
+
+#topbar img {
+  width: 1.5rem;
+  cursor: pointer;
+}
+
+.profile-picture {
+  border-radius: 100%;
+}
+
+#topbar .profile-picture {
+  width: 2.5rem;
+  margin: 0 0.25rem;
 }
 
 #search-bar {
   background-color: var(--main-background-color);
+  border: none;
+  border-radius: 1.75rem;
+  height: 1.75rem;
+  width: 35rem;
+  padding-left: 0.75rem;
 }
 
-#topbar > h3 {
+#topbar h3 {
   margin: 0;
+  font-weight: 600;
 }
 
 #opener {
-  display: grid;
+  margin-bottom: 1rem;
 }
 
-#opener h1, #opener h5 {
-  margin: 0;
+#opener h5 {
+  margin: 0 0 0.25rem 0;
+  font-size: 0.9rem;
+  font-weight: 650;
+}
+
+#opener .profile-picture {
+  width: 4rem;
 }
 
 #opener button {
-  margin: 0.5rem;
+  margin: 0.25rem;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 1.5rem;
   background-color: var(--primary-color);
   color: var(--off-white-color);
+  font-weight: 550;
+  cursor: pointer;
 }
 
 main {
