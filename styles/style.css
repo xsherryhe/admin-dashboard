@@ -195,18 +195,30 @@ article {
   padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: var(--section-shadow);
+  position: relative;
 }
 
 #projects article {
-  background: url(../images/star-plus-outline.svg) no-repeat 65% 90%,
-              url(../images/eye-plus-outline.svg) no-repeat 80% 90%,
-              url(../images/source-fork.svg) no-repeat 95% 90%,
-              linear-gradient(to right, black 0, black 0.5rem, var(--off-white-color) 0.5rem, var(--off-white-color) 100%);
-  background-size: 1.5rem, 1.5rem, 1.5rem, 100%;
+  background: linear-gradient(to right, black 0, black 0.5rem, var(--off-white-color) 0.5rem, var(--off-white-color) 100%);
 }
 
 article p {
   font-size: 0.95rem;
+}
+
+#projects .icon-grid {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: min-content;
+  gap: 1.5rem;
+}
+
+#projects img {
+  width: 1.5rem;
+  cursor: pointer;
 }
 
 #announcements {
