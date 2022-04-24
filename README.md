@@ -22,3 +22,12 @@ Image credits:
 
 2. Aqualast: https://pixabay.com/users/aqualast-18069379/
 https://pixabay.com/vectors/fish-koi-fins-scales-aquatic-5522139/
+
+3. Clker-Free-Vector-Images: https://pixabay.com/users/clker-free-vector-images-3736/
+https://pixabay.com/vectors/sun-yellow-spiral-summer-design-303773/
+
+4. AlexZel: https://pixabay.com/users/alexzel-725973/
+https://pixabay.com/vectors/planet-space-star-painting-sky-4226262/
+
+5. mohamed_hassan: https://pixabay.com/users/mohamed_hassan-5229782/
+https://pixabay.com/vectors/balance-justice-legal-icon-libra-3665426/

@@ -262,7 +262,24 @@ article {
 }
 
 #trending-preview {
-  grid-template-columns: auto auto;
+  grid-template-columns: max-content max-content;
+  padding: 0.5rem 1.5rem;
+}
+
+#trending .profile-picture {
+  width: 2.5rem;
+  place-self: center;
+  margin-right: 1rem;
+}
+
+#trending p {
+  font-size: 0.8rem;
+}
+
+#trending .user {
+  color: black;
+  align-self: end;
+  font-weight: 500;
 }
 
 #trending img {
