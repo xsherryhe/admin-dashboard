@@ -99,7 +99,7 @@ p {
   background-color: var(--off-white-color);
   grid-area: main-header;
   display: grid;
-  padding: 1rem 4rem 0 2rem;
+  padding: 1rem 4rem 1rem 2rem;
   box-shadow: var(--section-shadow);
 }
 
@@ -137,10 +137,6 @@ p {
   height: 1.75rem;
   width: 35rem;
   padding-left: 0.75rem;
-}
-
-#opener {
-  margin-bottom: 1rem;
 }
 
 #opener h5 {
@@ -188,7 +184,6 @@ main {
 
 #announcement-preview, #trending-preview {
   background-color: var(--off-white-color);
-  padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: var(--section-shadow);
 }
@@ -211,7 +206,7 @@ article {
   padding: 2rem;
 }
 
-#projects article p {
+#projects p {
   font-size: 0.95rem;
 }
 
@@ -270,6 +265,7 @@ article {
   width: 2.5rem;
   place-self: center;
   margin-right: 1rem;
+  grid-row-end: span 2;
 }
 
 #trending p {
@@ -280,9 +276,5 @@ article {
   color: black;
   align-self: end;
   font-weight: 500;
-}
-
-#trending img {
-  grid-row-end: span 2;
 }
 
