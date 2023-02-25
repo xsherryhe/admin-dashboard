@@ -1,8 +1,18 @@
+# Admin Dashboard
+
+## Introduction
+
 This project is a sample admin dashboard webpage, built from CSS and HTML.
 
 The project primarily demonstrates various CSS tools and skills, including CSS Grid syntax (grid sizing/positioning, auto-fit/auto-fill, minmax).
 
-Image credits:
+## Preview
+
+![Admin Dashboard preview](./images/preview.png)
+
+Run this project [here](https://xsherryhe.github.io/admin-dashboard/).
+
+## Image Credits
 
 1. Material Design Icons: https://materialdesignicons.com/  
   a. yin-yang  
