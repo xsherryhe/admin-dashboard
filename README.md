@@ -8,9 +8,9 @@ The project primarily demonstrates various CSS tools and skills, including CSS G
 
 ## Preview
 
-![Admin Dashboard preview](./images/preview.png)
+[![Admin Dashboard preview](./images/preview.png)](https://xsherryhe.github.io/admin-dashboard/)
 
-Run this project [here](https://xsherryhe.github.io/admin-dashboard/).
+Run this project <a href="https://xsherryhe.github.io/admin-dashboard/" target="_blank">here</a>.
 
 ## Image Credits
 
